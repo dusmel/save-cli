@@ -1,0 +1,36 @@
+{
+  "author": "Hadad Bwenge",
+  "name": "save-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsup",
+    "start": "tsup && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dusmel/save-scripts.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dusmel/save-scripts/issues"
+  },
+  "homepage": "https://github.com/dusmel/save-scripts#readme",
+  "dependencies": {
+    "@inquirer/prompts": "^3.0.4",
+    "@types/shelljs": "^0.8.12",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "figlet": "^1.6.0",
+    "ora": "^5.4.1",
+    "os": "^0.1.2",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}

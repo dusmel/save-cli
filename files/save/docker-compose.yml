@@ -1,0 +1,27 @@
+services:
+  dashboard:
+    build: ./Save_dashboard-v3
+    ports:
+      - 3000:3000
+    volumes:
+      - ./*:/app
+  # frontend-test:
+  #   image: fullstack-app-frontend
+  #   command: npm test
+  # api:
+  #   build: ./backend
+  #   ports:
+  #     - 3001:3001
+  #   environment:
+  #     DB_URL: mongodb://db/vidly
+  #   command: ./docker-entrypoint.sh
+  #   volumes:
+  #     - ./backend:/app
+  # db:
+  #   image: mongo:4.0-xenial
+  #   ports:
+  #     - 27017:27017 # default port of mongo
+  #   volumes:
+  #     - vidly:/data/db
+volumes:
+  save_dev:
