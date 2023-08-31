@@ -9,17 +9,31 @@ Preview
 
 
 ## Main sections
+- I'm new to save ( launch apps for me)
 - Bootup apps [API, ussd, dashboard]
 - Deploy
 - Open Docs
 - Contribute
 
 ### Get started
+Build ( the script will get you started )
 ```bash
-npm -g git@github.com:DreamStartLabs/Save_scripts.git && save
+  curl -L https://raw.githubusercontent.com/dusmel/save-cli/develop/scripts/startup.sh -H "Cache-Control: no-cache, no-store, must-revalidate" | bash
 ```
 
-### Bootup apps
+Then run 
+```bash
+  save
+```
+
+### Usage
+#### • I'm new to save ( launch apps for me)
+
+This option will clone and run main apps for you. 
+
+PS: It will create a repo on your desktop named `Save` if you have it already it will prompt you to override then backup you old dir under a different name in the same location.
+
+#### • Bootup apps
 
 
 
