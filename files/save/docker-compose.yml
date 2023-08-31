@@ -1,10 +1,11 @@
 services:
   dashboard:
-    build: ./Save_dashboard-v3
+    build: ./dashboard
     ports:
       - 3000:3000
     volumes:
-      - ./*:/app
+      - ./dashboard:/app
+      - nodemodules:/app/node_modules
   # frontend-test:
   #   image: fullstack-app-frontend
   #   command: npm test
@@ -24,4 +25,5 @@ services:
   #   volumes:
   #     - vidly:/data/db
 volumes:
-  save_dev:
+  nodemodules: {}
+  save_data:

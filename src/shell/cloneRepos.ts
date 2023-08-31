@@ -1,9 +1,9 @@
 import shell from "shelljs";
 
-const cloneRepos = (Repos: string[], Dir: string) =>
+const cloneRepos = (Repos: string[][], Dir: string) =>
   new Promise((fulfill, reject) => {
     const cloneCmd = Repos.reduce(
-      (finalCmd, currentRepo) => `${finalCmd} && git clone ${currentRepo}`,
+      (finalCmd, [repoLink, alias]) => `${finalCmd} && git clone ${repoLink} ${alias}`,
       ""
     );
     shell.exec(
